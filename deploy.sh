@@ -1,5 +1,5 @@
 docker build -t etsuk/multi-client:latest -t etsuk/multi-client:$SHA -f ./client/Dockerfile ./client
-docker build -t etsuk/multi-server:latest -t etsuk/multi-server:$SHA -f ./sever/Dockerfile ./server
+docker build -t etsuk/multi-server:latest -t etsuk/multi-server:$SHA -f ./server/Dockerfile ./server
 docker build -t etsuk/multi-worker:latest -t etsuk/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 
 docker push etsuk/multi-client:latest
